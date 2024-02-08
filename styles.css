@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+body {
+    min-width: 320px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    background-color: #8ecae6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #023047;
+}
+
+.palindrome-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+label {
+    color: #219ebc;
+    margin-bottom: 1rem;
+}
+
+.palindrome-input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.palindrome-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #4dabf7;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.palindrome-btn:hover {
+    background-color: #f2f2f2;
+}
+
+.results-div {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #4dabf7;
+    width: 100%;
+    display: none;
+}
+
+.results-div.visible {
+    display: block;
+}
+
+.palindrome-definition-div {
+    width: min(100vw, 450px);
+    font-size: 1.3rem;
+    min-height: 140px;
+    background-color: #023047;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.palindrome-definition {
+    color: #219ebc;
+    vertical-align: middle;
+    text-align: center;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.palindrome-definition span {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+.palindrome-definition dfn {
+    font-weight: bold;
+}
